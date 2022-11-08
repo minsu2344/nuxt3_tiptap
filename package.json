@@ -1,0 +1,24 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "nuxt": "3.0.0-rc.12"
+  },
+  "dependencies": {
+    "@tiptap/extension-character-count": "^2.0.0-beta.199",
+    "@tiptap/extension-subscript": "^2.0.0-beta.199",
+    "@tiptap/extension-superscript": "^2.0.0-beta.199",
+    "@tiptap/extension-text-align": "^2.0.0-beta.199",
+    "@tiptap/extension-underline": "^2.0.0-beta.199",
+    "@tiptap/starter-kit": "^2.0.0-beta.199",
+    "@tiptap/vue-3": "^2.0.0-beta.199",
+    "sass": "^1.56.0",
+    "sass-loader": "10"
+  }
+}
