@@ -6,7 +6,7 @@
     />
 
     <AppTextEditor v-model="content" :max-limit="280" />
-    <!-- <AppTextEditor :modelValue="content" @update:modelValue="content = $event" :max-limit="280" /> -->
+    <!-- <AppTextEditor :modelValue="content" @update:modelValue="content = $event.target.value" :max-limit="280" /> -->
     <button class="submit-button" @click="onSubmit">Submit</button>
   </div>
 </template>
