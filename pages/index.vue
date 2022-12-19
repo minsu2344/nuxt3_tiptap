@@ -5,7 +5,7 @@
       rel="stylesheet"
     />
 
-    <AppTextEditor v-model="content" :max-limit="280" />
+    <AppTextEditor :content="content" @update-content="handleUpdateContent" :max-limit="280" />
     <!-- <AppTextEditor :modelValue="content" @update:modelValue="content = $event.target.value" :max-limit="280" /> -->
     <button class="submit-button" @click="onSubmit">Submit</button>
   </div>
@@ -18,6 +18,10 @@ const content = ref<string>('');
 
 function onSubmit() {
   alert(JSON.stringify(content.value))
+}
+
+function handleUpdateContent(value: string) {
+  content.value = value;
 }
 </script>
 
